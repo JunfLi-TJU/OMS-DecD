@@ -3,21 +3,24 @@ Online Model Selection with Decentralized Data", accepted in NeurIPS 2024.
 
 We implement all algorithms with R on a Windows machine with 2.8 GHz Core(TM) i7-1165G7 CPU, execute each experiment 10 times with random permutation of all datasets and average all of the results.
 
-The default path of codes is "D:/experiment/NeurIPS/NeurIPS2024/code/".
+The default path of codes is "D:/experiment/NeurIPS2024/code".
 
-The path of datasets is "D:/experiment/online learning dataset/regression/".
+The path of datasets is "D:/experiment/NeurIPS2024/dataset".
 
-The store path is "D:/experiment/NeurIPS/NeurIPS2024/Result/".
+The store path is "D:/experiment/NeurIPS2024/Result/".
 
 You can also change all of the default paths.
 
 The baseline algorithms include: eM-KOFL and POF-MKL. 
-Our algorithms include: AOMD-OGS-hinge, AOMD-OGS-square, AONS-OGS, AVP-OGS, MAVP-OGS.
 
-The datasets are downloaded from: https://archive.ics.uci.edu/ml/index.php
-and 
-https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html.
+The datasets are downloaded from WEKA: https://waikato.github.io/weka-wiki/datasets/
+and UCI machine learning repository: https://archive.ics.uci.edu/ml/index.php.
 
-AOMD-OGS-hinge is obtained by instantiating AOMD-OGS with the Hinge loss function.
-AOMD-OGS-square is obtained by instantiating AOMD-OGS with the square loss function.
-FOGD-hinge is obtained by instantiating FOGD with the Hinge loss function.
+For Table 3, 
+please run FOMD-OMS-linear-2, FOMD-OMS-linear-K, NCO-OMS-2 and NCO-OMS-K.
+FOMD-OMS-linear-2 is obtained by running FOMD-OMS with J=2.
+NCO-OMS-2 is obtained by running NCO-OMS with J=2.
+
+For Table 4,
+please run eM-KOFL, POF-MKL and FOMD-OMS.
+
